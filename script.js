@@ -1,9 +1,9 @@
 //your JS code here. If required.
-let student = {
+const student = {
 	name : "john"	
 };
 function getKeys(obj) {
-	let keys = object.keys(obj);
+	let keys = Object.keys(obj);
 	return keys;
 };
 let arr = getKeys(student);
