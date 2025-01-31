@@ -1,10 +1,8 @@
-//your JS code here. If required.
-const student = {
-	name : "john"	
+// Add to Object prototype (caution: generally not recommended)
+Object.prototype.getKeys = function() {
+  return Object.keys(this);
 };
-function getKeys(obj) {
-	let keys = Object.keys(obj);
-	return keys;
-};
-let arr = getKeys(student);
-console.log(arr);
+
+const student = { name: "john" };
+const arr = student.getKeys(); // Now works as a method ✅
+console.log(arr); // Output: ["name"]
